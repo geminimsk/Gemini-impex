@@ -157,7 +157,7 @@ h6 {
   color: var(--default-color);
   font-family: var(--heading-font);
   background-color: var(--background-color);
-  padding: 15px 0;
+  padding: 6px 0;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -167,7 +167,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 32px;
+  max-height: 45px;
   margin-right: 8px;
 }
 
@@ -746,7 +746,26 @@ section,
   position: relative;
   z-index: 1;
 }
+.section-title h1 {
+  font-size: 62x;
+  font-weight: 750;
+  margin-bottom: 15px;
+  margin-top: 70px;
+  position: relative;
+  z-index: 1;
+}
 
+.section-title h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 122px;
+  height: 66px;
+  background: url(../img/section-title-bg.png) no-repeat;
+  z-index: -1;
+}
 .section-title h2::after {
   content: "";
   position: absolute;
